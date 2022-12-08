@@ -12,7 +12,7 @@
     "select4": "cd select-4 && npm run start",
     "install": "cd select-4 && npm install",
     "build": "cd select-4 && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -31,5 +31,8 @@
     "react": "^17.0.2",
     "react-schedule-job": "^1.2.0",
     "sequelize": "^6.6.4"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
